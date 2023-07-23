@@ -13,7 +13,7 @@ def is_enabled(value, default):
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/MOVIES_PROVIDE2')
     START_TXT = environ.get("START_TXT", '''Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I can't even imagine how super-fast i can drive your Database channel \n\n⚡MAINTAIED BY - @MOVIES_PROVIDE''')
+Myself <a href=https://t.me/{}>{}</a>,\n\n𝙸 𝙲𝙰𝙽 𝙶𝙸𝚅𝙴 𝙼𝙾𝚅𝙸𝙴𝚂/𝚂𝙴𝚁𝙸𝙴𝚂 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝙼𝙴 𝙽𝙰𝙼𝙴 𝙰𝙽𝙳 𝚂𝙴𝙴 𝙼𝙰𝙶𝙸𝙲...\n🚩𝙹𝙰𝙸 𝚂𝚁𝙸 𝚁𝙰𝙼 🚩\n\n⚡𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 - @Rexisop99 \n\n⚡MAINTAIED BY - @MOVIES_PROVIDE''')
     
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
