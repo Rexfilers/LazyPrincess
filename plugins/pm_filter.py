@@ -117,7 +117,7 @@ async def doc(bot, update):
              await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
              return 
     else:
-        caption = f"**{new_filename}** \n\n⚡️Data costs: `{filesize}`"
+        caption = f"**{new_filename}** \n\n⚡️𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴: `{filesize}`"
     if (media.thumbs or c_thumb):
         if c_thumb:
            ph_path = await bot.download_media(c_thumb) 
@@ -250,7 +250,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
         [   
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡𝙷𝙾𝚆 𝚃𝙾 𝙳𝚆𝙾𝙽𝙻𝙾𝙰𝙳⚡", url='https://t.me/MOVIES_PROVIDE/11')
         ]   
     )
 
@@ -344,7 +344,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             title = query.message.chat.title
 
         else:
-            return await query.answer('♥️ Love @LazyDeveloper ♥️')
+            return await query.answer('♥️ Love @MOVIES_PROVIDE ♥️')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -578,14 +578,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕↖️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/real_MoviesAdda2"),
-            InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('⚡ 𝙼𝙾𝚅𝙸𝙴 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 ⚡', url=f"https://t.me/MOVIES_PROVIDE"),
+            InlineKeyboardButton('🔰 𝙼𝙾𝚅𝙸𝙴 𝚁𝙴𝚀 🔰', url='https://t.me/MOVIES_PROVIDE2')
             ],[
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ]]
+             InlineKeyboardButton('🔰 𝙷𝙴𝙻𝙿 🔰', callback_data='help'),
+            InlineKeyboardButton('🌟 𝙰𝙱𝙾𝚄𝚃 🌟', callback_data='about')
+	],[
+		InlineKeyboardButton('🚩𝙹𝙰𝙸 𝚂𝚁𝙸 𝚁𝙰𝙼🚩', url='https://www.instagram.com/reel/CumTt3hs1bG/?igshid=MzRlODBiNWFlZA==')
+	]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -871,8 +873,8 @@ async def auto_filter(client, msg, spoll=False):
             if not files:
                 await client.send_message(req_channel,f"-🦋 #REQUESTED_CONTENT 🦋-\n\n📝**Content Name** :`{search}`\n**Requested By**: {message.from_user.first_name}\n **USER ID**:{message.from_user.id}\n\n🗃️",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
-                l = await message.reply_text(text=f"△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 `{message.from_user.first_name}` 😎,\n\nʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ ᴏᴜʀ **ᴀᴅᴍɪɴ'ꜱ ᴅᴀꜱʜʙᴏᴀʀᴅ** !\nᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ꜱᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ !\nᴛʜᴇʏ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ.\n\n➟ 📝𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝙣𝙖𝙢𝙚 : `{search}`\n➟ 👮𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : `{message.from_user.first_name}`\n\n༺ @real_MoviesAdda2 ༻\n\n🦋・‥☆𝘼𝘿𝙈𝙞𝙉 𝙨𝙪𝙥𝙥𝙤𝙧𝙩☆‥・🦋\n╰┈➤・☆ @aAdil_h\n╰┈➤・☆ @LazyDeveloperr",
-                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("━ • │▌║  ᗩᗪᗪ ʍɛ 2 ᑌᖇ Ǥᖇᗝᑌᑭ  ║▌│ • ━", url=f'http://t.me/{temp.U_NAME}?startgroup=true')],[InlineKeyboardButton("✪ Dev Ch- ✪", url="https://t.me/LazyDeveloper"), InlineKeyboardButton("✪ ＹＴ ✪", url="https://youtube.com/@LazyDeveloperr"), InlineKeyboardButton("✪ Main Ch- ✪", url="https://t.me/real_MoviesAdda2")],[InlineKeyboardButton("╚»♥️Thank u MoviesAdda™♥️«╝", callback_data="close_data")]]))
+                l = await message.reply_text(text=f"△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 `{message.from_user.first_name}` 😎,\n\nʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ ᴏᴜʀ **ᴀᴅᴍɪɴ'ꜱ ᴅᴀꜱʜʙᴏᴀʀᴅ** !\nᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ꜱᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ !\nᴛʜᴇʏ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ.\n\n➟ 📝𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝙣𝙖𝙢𝙚 : `{search}`\n➟ 👮𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : `{message.from_user.first_name}`\n\n༺ @MOVIES_PROVIDE ༻\n\n🦋・‥☆𝘼𝘿𝙈𝙞𝙉 𝙨𝙪𝙥𝙥𝙤𝙧𝙩☆‥・🦋\n╰┈➤・☆ @Rexisop99\n╰┈➤・☆ @MOVIES_PROVIDE",
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("━ • │▌║  ᗩᗪᗪ ʍɛ 2 ᑌᖇ Ǥᖇᗝᑌᑭ  ║▌│ • ━", url=f'http://t.me/{temp.U_NAME}?startgroup=true')],[InlineKeyboardButton("✪ Dev Ch- ✪", url="https://t.me/MOVIES_PROVIDE2"), InlineKeyboardButton("✪ ＹＴ ✪", url="https://t.me/MOVIES_PROVIDE2"), InlineKeyboardButton("✪ Main Ch- ✪", url="https://t.me/MOVIES_PROVIDE2")],[InlineKeyboardButton("╚»♥️Thank u MOVIES_PROVIDE™♥️«╝", callback_data="close_data")]]))
                 await asyncio.sleep(15)
                 await l.delete()
                 if settings["spell_check"]:
@@ -938,7 +940,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡𝙷𝙾𝚆 𝚃𝙾 𝙳𝚆𝙾𝙽𝙻𝙾𝙰𝙳⚡", url='https://t.me/MOVIES_PROVIDE/11')
         ] 
     )
 
